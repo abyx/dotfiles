@@ -174,3 +174,10 @@ set showtabline=2
 :map! <Home> <Nop>
 :map! <End> <Nop>
 
+" Add Vundle for vim plugins
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+Bundle "rails.vim"
+Bundle "endwise.vim"
+Bundle "surround.vim"
