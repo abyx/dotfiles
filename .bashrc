@@ -1,9 +1,6 @@
 #!/bin/bash
 source ~/.git-completion.sh
 
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
-
-
 # RVM stuff
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
 
@@ -32,11 +29,11 @@ grb_git_prompt() {
     if [ -n "$g" ]; then
         local MINUTES_SINCE_LAST_COMMIT=`minutes_since_last_commit`
         if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 30 ]; then
-            local COLOR=${RED}
+            local COLOR=${BRIGHT_RED}
         elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 10 ]; then
-            local COLOR=${YELLOW}
+            local COLOR=${BRIGT_YELLOW}
         else
-            local COLOR=${GREEN}
+            local COLOR=${BRIGHT_GREEN}
         fi
         local SINCE_LAST_COMMIT="${COLOR}$(minutes_since_last_commit)m${NORMAL}"
         # The __git_ps1 function inserts the current git branch where %s is
@@ -44,4 +41,4 @@ grb_git_prompt() {
         echo ${GIT_PROMPT}
     fi
 }
-PS1="${GREEN}\h${NORMAL}:${BLUE}\W${NORMAL}\$(grb_git_prompt) \u\$ "
+PS1="${BRIGHT_GREEN}\h${NORMAL}:${BRIGHT_BLUE}\W${NORMAL}\$(grb_git_prompt) \u\$ "
