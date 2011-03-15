@@ -181,3 +181,4 @@ call vundle#rc()
 Bundle "rails.vim"
 Bundle "endwise.vim"
 Bundle "surround.vim"
+Bundle "matchit.zip"
