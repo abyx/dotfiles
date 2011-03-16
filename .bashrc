@@ -42,3 +42,5 @@ grb_git_prompt() {
     fi
 }
 PS1="${BRIGHT_GREEN}\h${NORMAL}:${BRIGHT_BLUE}\W${NORMAL}\$(grb_git_prompt) \u\$ "
+
+export EDITOR=vim
