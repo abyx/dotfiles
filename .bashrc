@@ -31,7 +31,7 @@ grb_git_prompt() {
         if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 30 ]; then
             local COLOR=${BRIGHT_RED}
         elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 10 ]; then
-            local COLOR=${BRIGT_YELLOW}
+            local COLOR=${BRIGHT_YELLOW}
         else
             local COLOR=${BRIGHT_GREEN}
         fi
