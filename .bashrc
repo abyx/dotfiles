@@ -27,20 +27,11 @@ function minutes_since_last_commit {
 grb_git_prompt() {
     local g="$(__gitdir)"
     if [ -n "$g" ]; then
-        local MINUTES_SINCE_LAST_COMMIT=`minutes_since_last_commit`
-        if [ "$MINUTES_SINCE_LAST_COMMIT" -gt 30 ]; then
-            local COLOR=${BRIGHT_RED}
-        elif [ "$MINUTES_SINCE_LAST_COMMIT" -gt 10 ]; then
-            local COLOR=${BRIGHT_YELLOW}
-        else
-            local COLOR=${BRIGHT_GREEN}
-        fi
-        local SINCE_LAST_COMMIT="${COLOR}$(minutes_since_last_commit)m${NORMAL}"
+        local SINCE_LAST_COMMIT="$(minutes_since_last_commit)m"
         # The __git_ps1 function inserts the current git branch where %s is
-        local GIT_PROMPT=`__git_ps1 "(%s|${SINCE_LAST_COMMIT})"`
-        echo ${GIT_PROMPT}
+        echo -e "($(__git_ps1 "%s")|${SINCE_LAST_COMMIT})"
     fi
 }
-PS1="${BRIGHT_GREEN}\h${NORMAL}:${BRIGHT_BLUE}\W${NORMAL}\$(grb_git_prompt) \u\$ "
+PS1="\[${BRIGHT_GREEN}\]\h\[${NORMAL}\]:\[${BRIGHT_BLUE}\]\W\[${NORMAL}\]\$(grb_git_prompt) \u\$ "
 
 export EDITOR=vim
