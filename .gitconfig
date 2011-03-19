@@ -1,0 +1,26 @@
+[user]
+	name = Aviv Ben-Yosef
+	email = aviv.by@gmail.com
+[alias]
+	st = status
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    head = rev-parse HEAD
+    aa = add --all
+    au = add -u
+    dc = diff --cached
+    ci = commit
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    pullff = pull --ff-only
+    ff = merge --ff-only
+    recent = log --oneline -10
+    oneline = log --oneline
+    h = log -1 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+	ui = auto
+[github]
+	user = abyx
+	token = 0e5ca77a6ae7c1de40100b073acf2b73
+[core]
+    excludesfile = ~/.gitignore_global
