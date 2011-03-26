@@ -174,6 +174,8 @@ set showtabline=2
 :map! <Home> <Nop>
 :map! <End> <Nop>
 
+set cpoptions+=$
+
 " Add Vundle for vim plugins
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
