@@ -6,3 +6,5 @@ alias resource='source ~/.bash_profile'
 function rvm_create {
     rvm use 1.9.2@$1 --create --rvmrc
 }
+
+alias mongo_start="sudo mongod run --config /usr/local/Cellar/mongodb/1.8.0-x86_64/mongod.conf"
