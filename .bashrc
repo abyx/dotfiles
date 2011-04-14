@@ -17,3 +17,5 @@ export GREP_OPTIONS='--color'
 export CLICOLOR='true' # ls colors
 
 export EDITOR=vim
+
+export PATH="/usr/local/bin:${PATH}"
