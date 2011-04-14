@@ -18,4 +18,4 @@ export CLICOLOR='true' # ls colors
 
 export EDITOR=vim
 
-export PATH="/usr/local/bin:${PATH}"
+export PATH="/usr/local/bin:${PATH}:~/bin"
