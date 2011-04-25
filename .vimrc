@@ -177,9 +177,6 @@ set showtabline=2
 " Show $ when changing (c) stuff
 set cpoptions+=$
 
-" Make vim share clipboard with OS
-set clipboard=unnamed
-
 " Add Vundle for vim plugins
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
