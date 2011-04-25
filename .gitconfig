@@ -24,3 +24,5 @@
 	token = 0e5ca77a6ae7c1de40100b073acf2b73
 [core]
     excludesfile = ~/.gitignore_global
+[rerere]
+	enabled = 1
