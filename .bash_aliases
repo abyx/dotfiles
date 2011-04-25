@@ -8,3 +8,5 @@ function rvm_create {
 }
 
 alias mongo_start="sudo mongod run --config /usr/local/Cellar/mongodb/1.8.1-x86_64/mongod.conf"
+
+alias python='/usr/bin/python'
