@@ -81,8 +81,6 @@ set laststatus=2
 set showmatch
 set incsearch
 
-set textwidth=78
-
 set hls
 
 if has("gui_running")
