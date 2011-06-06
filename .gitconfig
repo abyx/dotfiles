@@ -17,6 +17,14 @@
     recent = log --oneline -10
     oneline = log --oneline
     h = log -1 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    di = diff
+    amend = commit --amend
+    r = !git l -20
+    l = log --graph --abbrev-commit --date=relative
+    la = !git l --all
+    fa = fetch --all
+    ra = !git r --all
+
 [color]
 	ui = auto
 [github]
