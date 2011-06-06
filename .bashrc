@@ -19,5 +19,3 @@ export CLICOLOR='true' # ls colors
 export EDITOR=vim
 
 export PATH="/usr/local/bin:${PATH}:~/bin"
-
-set -o vi # vi editing mode FTW? Let's give it a shot
