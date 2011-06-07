@@ -185,6 +185,7 @@ Bundle "surround.vim"
 Bundle "matchit.zip"
 Bundle "ack.vim"
 Bundle "git://git.wincent.com/command-t.git"
+Bundle "pyflakes.vim"
 
 let g:CommandTCursorStartMap='<leader>f'
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
