@@ -153,24 +153,23 @@ set numberwidth=5
 " Always show tab bar
 set showtabline=2
 
-" Disable arrow keys
-:map <Left> <Nop>
-:map <Right> <Nop>
-:map <Up> <Nop>
-:map <Down> <Nop>
-:map <PageUp> <Nop>
-:map <PageDown> <Nop>
-:map <Home> <Nop>
-:map <End> <Nop>
-
-:map! <Left> <Nop>
-:map! <Right> <Nop>
-:map! <Up> <Nop>
-:map! <Down> <Nop>
-:map! <PageUp> <Nop>
-:map! <PageDown> <Nop>
-:map! <Home> <Nop>
-:map! <End> <Nop>
+" Disable arrow keys for navigation
+:inoremap <Left> <Nop>
+:inoremap <Right> <Nop>
+:inoremap <Up> <Nop>
+:inoremap <Down> <Nop>
+:inoremap <PageUp> <Nop>
+:inoremap <PageDown> <Nop>
+:inoremap <Home> <Nop>
+:inoremap <End> <Nop>
+:noremap <Left> <Nop>
+:noremap <Right> <Nop>
+:noremap <Up> <Nop>
+:noremap <Down> <Nop>
+:noremap <PageUp> <Nop>
+:noremap <PageDown> <Nop>
+:noremap <Home> <Nop>
+:noremap <End> <Nop>
 
 " Show $ when changing (c) stuff
 set cpoptions+=$
