@@ -11,3 +11,5 @@ alias mongo_start="sudo mongod run --config /usr/local/Cellar/mongodb/1.8.1-x86_
 
 alias python='/usr/bin/python'
 alias pip=pip-2.6
+
+alias dj_redgreen="redgreen  -t python -- manage.py test --with-growl"
