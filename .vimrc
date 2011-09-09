@@ -185,6 +185,7 @@ Bundle "matchit.zip"
 Bundle "ack.vim"
 Bundle "git://git.wincent.com/command-t.git"
 Bundle "pyflakes.vim"
+Bundle "git://github.com/altercation/vim-colors-solarized.git"
 
 let g:CommandTCursorStartMap='<leader>f'
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
