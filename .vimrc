@@ -172,3 +172,7 @@ Bundle "vim-ruby/vim-ruby"
 
 let g:CommandTCursorStartMap='<leader>f'
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+
+" Show spelling errors with underlines
+hi clear SpellBad
+hi SpellBad cterm=underline
