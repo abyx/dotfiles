@@ -13,6 +13,7 @@ fi
 # Do not remember in history commands that start with a space
 HISTCONTROL=ignoreboth
 
+# Colors
 export GREP_OPTIONS='--color'
 export CLICOLOR='true' # ls colors
 
