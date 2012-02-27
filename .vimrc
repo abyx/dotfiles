@@ -176,3 +176,6 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 " Show spelling errors with underlines
 hi clear SpellBad
 hi SpellBad cterm=underline
+
+" I hate the difference between <c-c> and ESC!
+imap <c-c> <esc>
