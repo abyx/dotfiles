@@ -2,7 +2,7 @@
 	name = Aviv Ben-Yosef
 	email = aviv.by@gmail.com
 [push]
-    default = tracking
+    default = upstream
 [alias]
 	st = status
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
