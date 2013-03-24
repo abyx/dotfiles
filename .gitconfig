@@ -4,7 +4,7 @@
 [push]
     default = upstream
 [alias]
-	st = status
+	st = status -sb
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     head = rev-parse HEAD
     aa = add --all
@@ -34,6 +34,8 @@
 	user = abyx
 [core]
     excludesfile = ~/.gitignore_global
+	trustctime = false
+	pager = less -x4
 [rerere]
 	enabled = 1
 [format]
