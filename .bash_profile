@@ -27,3 +27,13 @@ grb_git_prompt() {
 }
 PS1="\[${BRIGHT_GREEN}\]\h\[${NORMAL}\]:\[${BRIGHT_BLUE}\]\W\[${NORMAL}\]\$(grb_git_prompt) \u\$ "
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# virtualenv stuff
+export WORKON_HOME=~/virtualenvs
+mkdir -p $WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
+
+export LC_CTYPE="en_US.UTF-8"
