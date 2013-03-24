@@ -19,4 +19,6 @@ export CLICOLOR='true' # ls colors
 
 export EDITOR=vim
 
-export PATH="/usr/local/bin:${PATH}:$HOME/bin"
+export PATH="/usr/local/bin:${PATH}:/usr/local/sbin:$HOME/bin"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
