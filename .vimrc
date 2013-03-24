@@ -139,8 +139,8 @@ augroup myfiletypes
   "clear old autocmds in group
   autocmd!
   "for ruby, autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass set ai sw=2 sts=2 et
-  autocmd FileType python set sw=4 sts=4 et
+  autocmd FileType ruby,haml,eruby,yaml,sass set ai sw=2 sts=2 et
+  autocmd FileType python,javascript,html set sw=4 sts=4 et
 augroup END
 
 set switchbuf=useopen
@@ -160,7 +160,7 @@ set cpoptions+=$
 set rtp+=~/.vim/vundle.git/
 call vundle#rc()
 
-Bundle "rails.vim"
+Bundle "tpope/vim-rails"
 Bundle "endwise.vim"
 Bundle "surround.vim"
 Bundle "matchit.zip"
@@ -169,6 +169,9 @@ Bundle "git://git.wincent.com/command-t.git"
 Bundle "pyflakes.vim"
 Bundle "git://github.com/altercation/vim-colors-solarized.git"
 Bundle "vim-ruby/vim-ruby"
+Bundle "tpope/vim-liquid"
+Bundle "tpope/vim-markdown"
+Bundle "lukaszb/vim-web-indent"
 
 let g:CommandTCursorStartMap='<leader>f'
 map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
