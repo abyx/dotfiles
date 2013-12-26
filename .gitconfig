@@ -7,7 +7,7 @@
 	st = status -sb
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     head = rev-parse HEAD
-    aa = add --all
+    aa = add --all .
     au = add -u
     dc = diff --cached
     ci = commit
@@ -40,3 +40,5 @@
 	enabled = 1
 [format]
     pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+[diff]
+	algorithm = patience
