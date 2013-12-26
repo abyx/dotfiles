@@ -104,6 +104,9 @@ end
 " GRB: Always source python.vim for Python files
 au FileType python source ~/.vim/scripts/python.vim
 
+" ABYX: always start at beginning of file for git commit messages
+au FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
 " GRB: Use custom python.vim syntax file
 au! Syntax python source ~/.vim/syntax/python.vim
 let python_highlight_all = 1
