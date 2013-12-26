@@ -20,6 +20,8 @@ alias wireshark="sudo /Applications/Wireshark.app/Contents/MacOS/Wireshark"
 
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d ' ' -f2"
 
+alias nptul="lsof -nP -i4TCP | grep LISTEN"
+
 if [ -e ~/.bash_aliases_private ]; then
     . ~/.bash_aliases_private
 fi
